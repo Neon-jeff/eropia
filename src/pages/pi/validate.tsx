@@ -47,7 +47,7 @@ export default function Wallet() {
     },
   ];
   return (
-    <div className="flex flex-col gap-10 items-center justify-center min-h-screen">
+    <div className="flex flex-col gap-10 items-center text-sm justify-center pt-20">
       {/* top */}
       <div className="bg-primary absolute  top-0 right-0 left-0 flex justify-center items-center text-white gap-2">
         Home
@@ -59,7 +59,7 @@ export default function Wallet() {
           Welcome to the <span className="font-medium ">Pi</span> browser
         </p>
       </div>
-      <div className="flex items-center justify-center max-md:grid max-md:grid-cols-3 lg:gap-10 max-md:gap-10">
+      <div className="flex items-center justify-center max-md:grid max-md:grid-cols-3 lg:gap-10 max-md:gap-5">
         {data.map((item) => (
           <ValidatePageItems
             image={item.image}
