@@ -59,7 +59,7 @@ export default function Wallet() {
           Welcome to the <span className="font-medium ">Pi</span> browser
         </p>
       </div>
-      <div className="flex items-center justify-center max-md:grid max-md:grid-cols-3 lg:gap-10 max-md:gap-5">
+      <div className="flex items-center justify-center max-md:grid max-md:grid-cols-3 lg:gap-10 max-md:gap-6">
         {data.map((item) => (
           <ValidatePageItems
             image={item.image}
