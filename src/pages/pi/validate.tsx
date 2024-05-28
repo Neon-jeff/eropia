@@ -56,7 +56,7 @@ export default function Wallet() {
       <div className="flex flex-col gap-2 items-center text-secondary">
         <Image src={logo} alt="logo" className="h-36 object-cover w-36" />
         <p>
-          Welcome to the <span className="font-medium ">Pi</span> browser
+          Welcome to the <span className="font-extrabold ">Pi</span> browser
         </p>
       </div>
       <div className="flex items-center justify-center max-md:grid max-md:grid-cols-3 lg:gap-10 max-md:gap-6">
