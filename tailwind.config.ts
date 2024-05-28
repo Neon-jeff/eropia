@@ -12,6 +12,9 @@ const config: Config = {
         primary: "#703d92",
         secondary: "#f6b133",
       },
+      fontFamily: {
+        Mulish: ["Mulish", "san-serif"],
+      },
     },
   },
   plugins: [],

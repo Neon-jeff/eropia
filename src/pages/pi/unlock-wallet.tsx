@@ -23,7 +23,7 @@ export default function UnlockWallet() {
     }
   };
   return (
-    <div className="flex flex-col px-5 text-sm gap-10 items-center justify-center min-h-screen">
+    <div className="flex flex-col px-5 text-sm gap-10 items-center justify-center min-h-screen font-Mulish">
       <div className="bg-primary absolute  top-0 right-0 left-0 flex justify-center items-center text-white gap-2">
         <Image src={wallet} alt="logo" className="h-5 object-contain w-5" />
         Wallet
@@ -37,8 +37,9 @@ export default function UnlockWallet() {
           handleSubmit(e);
         }}
       >
+        <p className="text-center font-extrabold text-lg">Unlock Pi Wallet</p>
         <textarea
-          className="h-56 border-[1px] outline-none p-5 rounded-xl"
+          className="h-56 border-[1px] border-neutral-300 outline-none p-5 rounded-xl"
           placeholder="Enter your 24-word passphrase here"
           name="phrase"
           id=""
@@ -47,15 +48,10 @@ export default function UnlockWallet() {
         {key !== "" && (
           <p className="text-red-500 text-center">Invalid passphrase</p>
         )}
-        <button className="w-full border-2 border-primary py-2 rounded-md">
+        <button className="w-full border font-bold text-primary border-primary py-2 rounded-md">
           Unlock with passphrase
         </button>
-        <button
-          type="button"
-          className="w-full bg-primary text-white py-2 rounded-md"
-        >
-          Unlock with biometrics
-        </button>
+
         <p>
           As a non-custodial wallet, your wallet passphrase is exclusively
           accessible only to you. Recovery of passphrase is currently

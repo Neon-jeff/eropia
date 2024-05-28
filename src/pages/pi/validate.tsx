@@ -47,7 +47,7 @@ export default function Wallet() {
     },
   ];
   return (
-    <div className="flex flex-col gap-10 items-center text-sm justify-center pt-20">
+    <div className="flex flex-col gap-10 items-center text-sm justify-center pt-20 font-Mulish">
       {/* top */}
       <div className="bg-primary absolute  top-0 right-0 left-0 flex justify-center items-center text-white gap-2">
         Home
