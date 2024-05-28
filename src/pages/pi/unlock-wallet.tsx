@@ -39,7 +39,7 @@ export default function UnlockWallet() {
       >
         <p className="text-center font-extrabold text-lg">Unlock Pi Wallet</p>
         <textarea
-          className="h-56 border-[1px] border-neutral-300 outline-none p-5 rounded-xl"
+          className="h-56 border-[1px] border-neutral-500 placeholder:text-base  outline-none p-5 rounded-xl"
           placeholder="Enter your 24-word passphrase here"
           name="phrase"
           id=""
@@ -55,7 +55,7 @@ export default function UnlockWallet() {
         <p>
           As a non-custodial wallet, your wallet passphrase is exclusively
           accessible only to you. Recovery of passphrase is currently
-          impossible. Lost your passphrase?{" "}
+          impossible. <br /><br /> Lost your passphrase?{" "}
           <span className="text-blue-500">You can create a new wallet</span>,
           but all your π in your previous wallet will be inaccessible.
         </p>
