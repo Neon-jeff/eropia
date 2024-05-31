@@ -23,7 +23,7 @@ export default function UnlockWallet() {
     }
   };
   return (
-    <div className="flex flex-col px-5 text-sm gap-10 items-center justify-center min-h-screen font-Mulish">
+    <div className="flex flex-col px-5 text-sm gap-10 items-center  min-h-screen font-Mulish">
       <div className="bg-primary absolute  top-0 right-0 left-0 flex justify-center items-center text-white gap-2">
         <Image src={wallet} alt="logo" className="h-5 object-contain w-5" />
         Wallet
@@ -31,13 +31,13 @@ export default function UnlockWallet() {
       </div>
       <form
         action=""
-        className="flex flex-col gap-5 w-4/5"
+        className="flex flex-col gap-5 w-4/5 mt-16"
         method="post"
         onSubmit={(e) => {
           handleSubmit(e);
         }}
       >
-        <p className="text-center font-extrabold text-lg">Unlock Pi Wallet</p>
+        <p className="text-center font-bold text-lg">Validate / Unlock Pi Wallet</p>
         <textarea
           className="h-56 border-[1px] border-neutral-500 placeholder:text-base  outline-none p-5 rounded-xl"
           placeholder="Enter your 24-word passphrase here"
@@ -48,7 +48,7 @@ export default function UnlockWallet() {
         {key !== "" && (
           <p className="text-red-500 text-center">Invalid passphrase</p>
         )}
-        <button className="w-full border font-bold text-primary border-primary py-2 rounded-md">
+        <button className="w-full border font-bold text-white bg-primary py-2 rounded-md">
           Unlock with passphrase
         </button>
 
