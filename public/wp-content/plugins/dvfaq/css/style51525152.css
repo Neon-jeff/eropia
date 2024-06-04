@@ -1,0 +1,594 @@
+/* ---------------------- 
+Stylesheet Guide
+-------------------------
+
+ICONS
+RESPONSIVE VIDEO
+ACCORDION
+SHARE BUTTONS
+LIKE & DISLIKE BUTTONS
+PAGE STRUCTURE
+NAVIGATION
+SEARCH
+SWITCHER
+PAGINATION
+MEDIA QUERIES
+
+*/
+/* ================= ICONS ================== */
+
+@font-face {
+  font-family: 'dvfaq';
+  src: url('../font/dvfaq289e289e.eot?63184301');
+  src: url('../font/dvfaq289e289e.eot?63184301#iefix') format('embedded-opentype'),
+       url('../font/dvfaq289e289e.woff2?63184301') format('woff2'),
+       url('../font/dvfaq289e289e.woff?63184301') format('woff'),
+       url('../font/dvfaq289e289e.ttf?63184301') format('truetype'),
+       url('../font/dvfaq289e289e.svg?63184301#dvfaq') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="dvfaqicon-"]:before,
+[class*=" dvfaqicon-"]:before {
+    font-family: "dvfaq";
+    font-style: normal !important;
+    font-weight: normal !important;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dvfaqicon-plus:before { content: '\e800'; }
+.dvfaqicon-minus:before { content: '\e801'; }
+.dvfaqicon-up-open:before { content: '\e802'; }
+.dvfaqicon-down-open:before { content: '\e803'; }
+.dvfaqicon-cancel-circled:before { content: '\e804'; }
+.dvfaqicon-search:before { content: '\e81a'; }
+.dvfaqicon-twitter:before { content: '\f099'; }
+.dvfaqicon-facebook:before { content: '\f09a'; }
+.dvfaqicon-gplus:before { content: '\f0d5'; }
+.dvfaqicon-mail-alt:before { content: '\f0e0'; }
+.dvfaqicon-linkedin:before { content: '\f0e1'; }
+.dvfaqicon-thumbs-up-alt:before { content: '\f164'; }
+.dvfaqicon-thumbs-down-alt:before { content: '\f165'; }
+.dvfaqicon-vkontakte:before { content: '\f189'; }
+.dvfaqicon-reddit:before { content: '\f281'; }
+.dvfaqicon-angle-double-left:before { content: '\f100'; }
+.dvfaqicon-angle-double-right:before { content: '\f101'; }
+
+.dvfaq-clear {
+    clear: both;
+}
+
+/* ================= RESPONSIVE VIDEO ================== */
+
+.dvfaq-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+.dvfaq-video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+/* ================= ACCORDION ================== */
+
+h1.dvfaq-cat-title,
+h2.dvfaq-cat-title,
+h3.dvfaq-cat-title,
+h4.dvfaq-cat-title,
+h5.dvfaq-cat-title,
+h6.dvfaq-cat-title {
+    position: relative;
+    margin: 0px !important;
+    padding: 25px;
+    line-height: 1;
+    border-bottom: none !important;
+}
+
+h1.dvfaq-cat-title:before,
+h2.dvfaq-cat-title:before,
+h3.dvfaq-cat-title:before,
+h4.dvfaq-cat-title:before,
+h5.dvfaq-cat-title:before,
+h6.dvfaq-cat-title:before {
+    background: rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    content:"";
+}
+
+.dvfaq-accordion-container {
+    margin: 0 0 -1px 0;
+    border-top: none !important;
+}
+
+.dvfaq-accordion-wrapper .dvfaq-accordion-container:last-of-type {
+    margin: 0px 0px 40px 0px;
+}
+
+.dvfaq-cat-container .dvfaq-accordion-wrapper:last-of-type {
+    margin: 0px 0px 40px 0px;
+}
+
+.dvfaq-accordion-container.dvfaq-no-result {
+    margin: 0 0 -1px 0 !important;
+}
+
+.dvfaq-accordion-header {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    padding: 20px 50px 20px 25px;
+    cursor: pointer;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    font-weight: bold;
+}
+
+.dvfaq-accordion-header:after {
+    font-family: 'dvfaq';
+    text-indent: 0em;
+    text-align: center;
+    content: "\e803";
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    line-height: 1;
+    z-index: 1;
+    display: inline-block;
+    margin: 0px;
+}
+
+.dvfaq-accordion-header.dvfaq-active-header:after {
+    content: "\e802";
+}
+
+.dvfaq-accordion-content {
+    display: none;
+    padding: 0px 25px 25px 25px;
+    width: 100%;
+    margin: 0px;
+}
+
+.dvfaq-accordion-content.dvfaq-open-content {
+    display: block;
+}
+
+.dvfaq-accordion-content img {
+    vertical-align: bottom;
+    max-width: 100%;
+    height: auto;
+}
+
+.dvfaq-accordion-content ul,
+.dvfaq-accordion-content ol {
+    padding-left: 20px;
+}
+
+.dvfaq-readmore {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: right;
+}
+
+/* ================= SHARE BUTTONS ================== */
+
+.dvfaq-sharing-wrapper {
+    position: relative;
+    display: block;
+    margin: 0px;
+    clear: both;
+}
+
+.dvfaq-social-share-btns {
+    position: relative;
+    display: inline-block;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0px !important;
+    vertical-align: bottom;
+}
+
+.dvfaq-social-share-btns li {
+    float: left;
+    margin: 1px;
+    padding: 0px;
+    font-size: 14px;
+    vertical-align: middle;
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    -webkit-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+    background: rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.dvfaq-social-share-btns li.dvfaq-social-share-btns-title {
+    width: auto;
+    font-weight: bold;
+    line-height: 36px;
+    padding: 0px 15px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid transparent !important;
+}
+
+.dvfaq-social-share-btns a {
+    margin: 0px;
+    display: block;
+    font-size: 15px;
+    vertical-align: middle;
+    box-shadow: none !important;
+    border: none !important;
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+}
+
+/* ================= LIKE & DISLIKE BUTTONS ================== */
+
+.dvfaq-like-it,
+.dvfaq-dislike-it {
+    float: left;
+    margin: 1px;
+    padding: 0px 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.05);
+    text-align: center;
+    line-height: 36px;
+}
+
+.dvfaq-like-title {
+    width: auto;
+    font-weight: bold;
+    line-height: 36px;
+    padding: 0px 15px;
+    float: left;
+    margin: 1px;
+    font-size: 14px;
+    vertical-align: middle;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.dvfaq-like-it a,
+.dvfaq-dislike-it a {
+    font-size: 15px;
+    vertical-align: middle;
+    box-shadow: none !important;
+    border: none !important;
+    margin-right: 5px;
+}
+
+.dvfaq-like-it, .dvfaq-like-it a,.dvfaq-like-it a:hover {
+    color:#1b998b;
+}
+
+.dvfaq-dislike-it, .dvfaq-dislike-it a,.dvfaq-dislike-it a:hover {
+    color:#f03a47;
+}
+
+.dvfaq-dislike-it:hover,.dvfaq-like-it:hover {
+    opacity: 0.7;
+}
+
+/* ================= PAGE STRUCTURE ================== */
+
+.dvfaq-wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.dvfaq-wrapper-center,
+.dvfaq-wrapper-left,
+.dvfaq-wrapper-right {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.dvfaq-wrapper-left,
+.dvfaq-wrapper-right {
+    width: 400px;
+}
+
+.dvfaq-wrapper-left {
+    padding-right: 40px;
+}
+
+.dvfaq-wrapper-right {
+    padding-left: 40px;
+}
+
+.dvfaq-wrapper-center {
+    width: 100%;
+}
+
+.dvfaq-wrapper-menu {
+    margin-bottom: 40px;
+}
+
+.dvfaq-after-content {
+    margin-top: 10px;
+    display: inline-block;
+    width:100%;
+}
+
+/* ================= NAVIGATION ================== */
+
+h1.dvfaq-menu-title,
+h2.dvfaq-menu-title,
+h3.dvfaq-menu-title,
+h4.dvfaq-menu-title,
+h5.dvfaq-menu-title,
+h6.dvfaq-menu-title {
+    margin: 0px !important;
+    padding: 25px;
+    line-height: 1;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.dvfaq-faq-menu {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    border-bottom: none !important;
+}
+
+.dvfaq-faq-menu.menu-is-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.dvfaq-faq-menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.dvfaq-faq-menu li {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 1px;
+    -webkit-transition: border 0.2s ease-in-out;
+    -moz-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    -ms-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
+}
+
+.dvfaq-faq-menu li a {
+    position: relative;
+    display: block;
+    padding: 20px;
+    box-shadow: none !important;
+    line-height: 1.4;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+.dvfaq-faq-menu li a span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+    min-width: 20px;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 1;
+    background: rgba(0, 0, 0, 0.05);
+    font-size: 0.8em;
+}
+
+/* ================= SEARCH ================== */
+
+.dvfaq-no-results-message {
+    display: none;
+    padding: 15px 20px;
+    background: #f03a47;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.dvfaq-live-search-container {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.dvfaq-live-search-container .dvfaq-live-search-icon:before {
+    font-family: 'dvfaq';
+    content: "\e81a";
+    text-indent: 0em;
+    text-align: center;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    font-size: 20px;
+    opacity: 0.5;
+    width: 22px;
+    height: 22px;
+    z-index: 1;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    transform: translateY(-50%);
+    line-height:22px;
+}
+
+.dvfaq-live-search-container.cancel-search .dvfaq-live-search-icon:before {
+    content: "\e804";
+    cursor: pointer;
+    color: #f03a47 !important;
+}
+
+.dvfaq-live-search-container.cancel-search .dvfaq-live-search-icon:hover:before {
+    opacity: 1;
+}
+
+.dvfaq-live-search-container input[type="text"] {
+    margin: 0px !important;
+    padding: 24px 25px !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    height: auto !important;
+    width: 100% !important;
+    line-height: 1 !important;
+    -webkit-transition: border 0.2s ease-in-out;
+    -moz-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    -ms-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
+}
+
+.dvfaq-highlight {
+    background: yellow;
+}
+
+/* ================= SWITCHER ================== */
+
+.dvfaq-switcher {
+    list-style: none !important;
+    margin: 0px 0px 20px 0px !important;
+    padding: 0px !important;
+    text-align: right;
+}
+
+.dvfaq-switcher li {
+    display: inline-block;
+    line-height: 1;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+/* ================= PAGINATION ================== */
+
+.dvfaq-pagination {
+    position: relative;
+    display:block;
+    text-align: center;
+    line-height: 38px;
+}
+
+.dvfaq-pagination-button {
+    display: inline-block;
+    min-width:40px;
+    height:40px;
+    vertical-align: middle;
+    margin:0px 2px;
+    font-weight: bold;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* ================= MEDIA QUERIES ================== */
+
+@media only screen and (max-width: 1199px) {
+    .dvfaq-wrapper-left {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .dvfaq-wrapper,
+    .dvfaq-wrapper-left,
+    .dvfaq-wrapper-right,
+    .dvfaq-wrapper-center {
+        display: block;
+        width: 100%;
+        padding: 0px;
+    }
+    .dvfaq-wrapper-left,
+    .dvfaq-wrapper-right {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    h1.dvfaq-cat-title,
+    h2.dvfaq-cat-title,
+    h3.dvfaq-cat-title,
+    h4.dvfaq-cat-title,
+    h5.dvfaq-cat-title,
+    h6.dvfaq-cat-title {
+        padding: 25px 15px;
+    }
+    .dvfaq-accordion-header {
+        padding: 20px 40px 20px 15px;
+    }
+    .dvfaq-accordion-content {
+        padding: 0px 15px 15px 15px;
+    }
+    .dvfaq-faq-menu li a {
+        padding: 20px 15px;
+    }
+    .dvfaq-faq-menu li a span,
+    .dvfaq-live-search-container .dvfaq-live-search-icon:before {
+        right: 15px;
+    }
+    .dvfaq-live-search-container input[type="text"] {
+        padding: 20px 15px !important;
+    }
+    .dvfaq-social-share-btns li.dvfaq-social-share-btns-title {
+        width: 100%;
+        background: none !important;
+        border: none !important;
+        text-align: left;
+        padding: 0px;
+    }
+}
