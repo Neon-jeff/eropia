@@ -1,0 +1,359 @@
+/* ================= DEFAULT SKIN ================== */
+
+.dvfaq-custom h1.dvfaq-cat-title,
+.dvfaq-custom h2.dvfaq-cat-title,
+.dvfaq-custom h3.dvfaq-cat-title,
+.dvfaq-custom h4.dvfaq-cat-title,
+.dvfaq-custom h5.dvfaq-cat-title,
+.dvfaq-custom h6.dvfaq-cat-title,
+.dvfaq-custom h1.dvfaq-menu-title,
+.dvfaq-custom h2.dvfaq-menu-title,
+.dvfaq-custom h3.dvfaq-menu-title,
+.dvfaq-custom h4.dvfaq-menu-title,
+.dvfaq-custom h5.dvfaq-menu-title,
+.dvfaq-custom h6.dvfaq-menu-title,
+.dvfaq-custom .dvfaq-faq-menu li a,
+.dvfaq-custom .dvfaq-readmore a,
+.dvfaq-custom .dvfaq-switcher li,
+.dvfaq-custom .dvfaq-accordion-header.dvfaq-active-header,
+.dvfaq-custom .dvfaq-pagination-button {
+    color: #000;
+}
+
+.dvfaq-custom .dvfaq-accordion-container,
+.dvfaq-custom .dvfaq-accordion-container p,
+.dvfaq-custom .dvfaq-social-share-btns li,
+.dvfaq-custom .dvfaq-social-share-btns a,
+.dvfaq-custom .dvfaq-like-title,
+.dvfaq-custom .dvfaq-accordion-header,
+.dvfaq-custom .dvfaq-live-search-container .dvfaq-live-search-icon:before {
+    color: #444;
+}
+
+.dvfaq-custom .dvfaq-live-search-container input[type="text"],
+.dvfaq-custom .dvfaq-live-search-container input[type="text"]:focus {
+    color: #444 !important;
+}
+
+.dvfaq-custom .dvfaq-accordion-container,
+.dvfaq-custom .dvfaq-faq-menu,
+.dvfaq-custom h1.dvfaq-cat-title,
+.dvfaq-custom h2.dvfaq-cat-title,
+.dvfaq-custom h3.dvfaq-cat-title,
+.dvfaq-custom h4.dvfaq-cat-title,
+.dvfaq-custom h5.dvfaq-cat-title,
+.dvfaq-custom h6.dvfaq-cat-title,
+.dvfaq-custom .dvfaq-switcher-open,
+.dvfaq-custom .dvfaq-switcher-close {
+    background:#ffffff;
+}
+
+.dvfaq-custom .dvfaq-live-search-container input[type="text"] {
+    background: #ffffff !important;
+}
+
+.dvfaq-custom h1.dvfaq-cat-title,
+.dvfaq-custom h2.dvfaq-cat-title,
+.dvfaq-custom h3.dvfaq-cat-title,
+.dvfaq-custom h4.dvfaq-cat-title,
+.dvfaq-custom h5.dvfaq-cat-title,
+.dvfaq-custom h6.dvfaq-cat-title {
+    border: 1px solid #ddd;
+}
+.dvfaq-custom .dvfaq-accordion-container {
+    border: 1px solid #ddd;
+}
+.dvfaq-custom .dvfaq-accordion-header {
+    border-top: 1px solid #ddd;
+}
+.dvfaq-custom .dvfaq-social-share-btns li {
+    border: 1px solid #ddd;
+}
+
+.dvfaq-custom .dvfaq-like-it,
+.dvfaq-custom .dvfaq-dislike-it {
+    border: 1px solid #ddd;
+}
+
+.dvfaq-custom h1.dvfaq-menu-title,
+.dvfaq-custom h2.dvfaq-menu-title,
+.dvfaq-custom h3.dvfaq-menu-title,
+.dvfaq-custom h4.dvfaq-menu-title,
+.dvfaq-custom h5.dvfaq-menu-title,
+.dvfaq-custom h6.dvfaq-menu-title {
+    border-bottom: 1px solid #ddd;
+}
+
+.dvfaq-custom .dvfaq-faq-menu {
+    border: 1px solid #ddd;
+}
+
+.dvfaq-custom .dvfaq-faq-menu li a {
+    border-bottom: 1px solid #ddd;
+}
+
+.dvfaq-custom .dvfaq-live-search-container input[type="text"] {
+    border: 1px solid #ddd;
+}
+
+.dvfaq-custom .dvfaq-switcher li {
+    border: 1px solid #ddd;
+}
+
+.dvfaq-custom .dvfaq-pagination-button {
+    border:1px solid #ddd;
+}
+
+.dvfaq-custom .dvfaq-pagination-button.active,
+.dvfaq-custom .dvfaq-accordion-header:hover,
+.dvfaq-custom .dvfaq-social-share-btns a:hover,
+.dvfaq-custom .dvfaq-faq-menu li a:hover,
+.dvfaq-custom .dvfaq-switcher li:hover,
+.dvfaq-custom .dvfaq-readmore a:hover,
+.dvfaq-custom .dvfaq-pagination-button:hover {
+    color: #007acc;
+}
+
+.dvfaq-custom .dvfaq-live-search-container input[type="text"]:focus {
+    border-color: #007acc !important;
+}
+
+/* ================= LIGHT SKIN ================== */
+
+.dvfaq-light h1.dvfaq-cat-title,
+.dvfaq-light h2.dvfaq-cat-title,
+.dvfaq-light h3.dvfaq-cat-title,
+.dvfaq-light h4.dvfaq-cat-title,
+.dvfaq-light h5.dvfaq-cat-title,
+.dvfaq-light h6.dvfaq-cat-title,
+.dvfaq-light h1.dvfaq-menu-title,
+.dvfaq-light h2.dvfaq-menu-title,
+.dvfaq-light h3.dvfaq-menu-title,
+.dvfaq-light h4.dvfaq-menu-title,
+.dvfaq-light h5.dvfaq-menu-title,
+.dvfaq-light h6.dvfaq-menu-title,
+.dvfaq-light .dvfaq-faq-menu li a,
+.dvfaq-light .dvfaq-readmore a,
+.dvfaq-light .dvfaq-switcher li,
+.dvfaq-light .dvfaq-accordion-header.dvfaq-active-header,
+.dvfaq-light .dvfaq-pagination-button {
+    color: #000;
+}
+
+.dvfaq-light .dvfaq-accordion-container,
+.dvfaq-light .dvfaq-accordion-container p,
+.dvfaq-light .dvfaq-social-share-btns li,
+.dvfaq-light .dvfaq-social-share-btns a,
+.dvfaq-light .dvfaq-like-title,
+.dvfaq-light .dvfaq-accordion-header,
+.dvfaq-light .dvfaq-live-search-container .dvfaq-live-search-icon:before {
+    color: #444;
+}
+
+.dvfaq-light .dvfaq-live-search-container input[type="text"],
+.dvfaq-light .dvfaq-live-search-container input[type="text"]:focus {
+    color: #444 !important;
+}
+
+.dvfaq-light .dvfaq-accordion-container,
+.dvfaq-light .dvfaq-faq-menu,
+.dvfaq-light h1.dvfaq-cat-title,
+.dvfaq-light h2.dvfaq-cat-title,
+.dvfaq-light h3.dvfaq-cat-title,
+.dvfaq-light h4.dvfaq-cat-title,
+.dvfaq-light h5.dvfaq-cat-title,
+.dvfaq-light h6.dvfaq-cat-title,
+.dvfaq-light .dvfaq-switcher-open,
+.dvfaq-light .dvfaq-switcher-close {
+    background:#ffffff;
+}
+
+.dvfaq-light .dvfaq-live-search-container input[type="text"] {
+    background: #ffffff !important;
+}
+
+.dvfaq-light h1.dvfaq-cat-title,
+.dvfaq-light h2.dvfaq-cat-title,
+.dvfaq-light h3.dvfaq-cat-title,
+.dvfaq-light h4.dvfaq-cat-title,
+.dvfaq-light h5.dvfaq-cat-title,
+.dvfaq-light h6.dvfaq-cat-title {
+    border: 1px solid #ddd;
+}
+.dvfaq-light .dvfaq-accordion-container {
+    border: 1px solid #ddd;
+}
+.dvfaq-light .dvfaq-accordion-header {
+    border-top: 1px solid #ddd;
+}
+.dvfaq-light .dvfaq-social-share-btns li {
+    border: 1px solid #ddd;
+}
+
+.dvfaq-light .dvfaq-like-it,
+.dvfaq-light .dvfaq-dislike-it {
+    border: 1px solid #ddd;
+}
+
+.dvfaq-light h1.dvfaq-menu-title,
+.dvfaq-light h2.dvfaq-menu-title,
+.dvfaq-light h3.dvfaq-menu-title,
+.dvfaq-light h4.dvfaq-menu-title,
+.dvfaq-light h5.dvfaq-menu-title,
+.dvfaq-light h6.dvfaq-menu-title {
+    border-bottom: 1px solid #ddd;
+}
+
+.dvfaq-light .dvfaq-faq-menu {
+    border: 1px solid #ddd;
+}
+
+.dvfaq-light .dvfaq-faq-menu li a {
+    border-bottom: 1px solid #ddd;
+}
+
+.dvfaq-light .dvfaq-live-search-container input[type="text"] {
+    border: 1px solid #ddd;
+}
+
+.dvfaq-light .dvfaq-switcher li {
+    border: 1px solid #ddd;
+}
+
+.dvfaq-light .dvfaq-pagination-button {
+    border:1px solid #ddd;
+}
+
+.dvfaq-light .dvfaq-pagination-button.active,
+.dvfaq-light .dvfaq-accordion-header:hover,
+.dvfaq-light .dvfaq-social-share-btns a:hover,
+.dvfaq-light .dvfaq-faq-menu li a:hover,
+.dvfaq-light .dvfaq-switcher li:hover,
+.dvfaq-light .dvfaq-readmore a:hover,
+.dvfaq-light .dvfaq-pagination-button:hover {
+    color: #007acc;
+}
+
+.dvfaq-light .dvfaq-live-search-container input[type="text"]:focus {
+    border-color: #007acc !important;
+}
+
+/* ================= DARK SKIN ================== */
+
+.dvfaq-dark h1.dvfaq-cat-title,
+.dvfaq-dark h2.dvfaq-cat-title,
+.dvfaq-dark h3.dvfaq-cat-title,
+.dvfaq-dark h4.dvfaq-cat-title,
+.dvfaq-dark h5.dvfaq-cat-title,
+.dvfaq-dark h6.dvfaq-cat-title,
+.dvfaq-dark h1.dvfaq-menu-title,
+.dvfaq-dark h2.dvfaq-menu-title,
+.dvfaq-dark h3.dvfaq-menu-title,
+.dvfaq-dark h4.dvfaq-menu-title,
+.dvfaq-dark h5.dvfaq-menu-title,
+.dvfaq-dark h6.dvfaq-menu-title,
+.dvfaq-dark .dvfaq-faq-menu li a,
+.dvfaq-dark .dvfaq-readmore a,
+.dvfaq-dark .dvfaq-switcher li,
+.dvfaq-dark .dvfaq-accordion-header.dvfaq-active-header,
+.dvfaq-dark .dvfaq-pagination-button {
+    color: #fff;
+}
+
+.dvfaq-dark .dvfaq-accordion-container,
+.dvfaq-dark .dvfaq-accordion-container p,
+.dvfaq-dark .dvfaq-social-share-btns li,
+.dvfaq-dark .dvfaq-social-share-btns a,
+.dvfaq-dark .dvfaq-like-title,
+.dvfaq-dark .dvfaq-accordion-header,
+.dvfaq-dark .dvfaq-live-search-container .dvfaq-live-search-icon:before {
+    color: #999;
+}
+
+.dvfaq-dark .dvfaq-live-search-container input[type="text"],
+.dvfaq-dark .dvfaq-live-search-container input[type="text"]:focus {
+    color: #999 !important;
+}
+
+.dvfaq-dark .dvfaq-accordion-container,
+.dvfaq-dark .dvfaq-faq-menu,
+.dvfaq-dark h1.dvfaq-cat-title,
+.dvfaq-dark h2.dvfaq-cat-title,
+.dvfaq-dark h3.dvfaq-cat-title,
+.dvfaq-dark h4.dvfaq-cat-title,
+.dvfaq-dark h5.dvfaq-cat-title,
+.dvfaq-dark h6.dvfaq-cat-title,
+.dvfaq-dark .dvfaq-switcher-open,
+.dvfaq-dark .dvfaq-switcher-close {
+    background:#1a1a1a;
+}
+
+.dvfaq-dark .dvfaq-live-search-container input[type="text"] {
+    background: #1a1a1a !important;
+}
+
+.dvfaq-dark h1.dvfaq-cat-title,
+.dvfaq-dark h2.dvfaq-cat-title,
+.dvfaq-dark h3.dvfaq-cat-title,
+.dvfaq-dark h4.dvfaq-cat-title,
+.dvfaq-dark h5.dvfaq-cat-title,
+.dvfaq-dark h6.dvfaq-cat-title {
+    border: 1px solid #222;
+}
+.dvfaq-dark .dvfaq-accordion-container {
+    border: 1px solid #222;
+}
+.dvfaq-dark .dvfaq-accordion-header {
+    border-top: 1px solid #222;
+}
+.dvfaq-dark .dvfaq-social-share-btns li {
+    border: 1px solid #222;
+}
+
+.dvfaq-dark .dvfaq-like-it,
+.dvfaq-dark .dvfaq-dislike-it {
+    border: 1px solid #222;
+}
+
+.dvfaq-dark h1.dvfaq-menu-title,
+.dvfaq-dark h2.dvfaq-menu-title,
+.dvfaq-dark h3.dvfaq-menu-title,
+.dvfaq-dark h4.dvfaq-menu-title,
+.dvfaq-dark h5.dvfaq-menu-title,
+.dvfaq-dark h6.dvfaq-menu-title {
+    border-bottom: 1px solid #222;
+}
+
+.dvfaq-dark .dvfaq-faq-menu {
+    border: 1px solid #222;
+}
+
+.dvfaq-dark .dvfaq-faq-menu li a {
+    border-bottom: 1px solid #222;
+}
+
+.dvfaq-dark .dvfaq-live-search-container input[type="text"] {
+    border: 1px solid #222;
+}
+
+.dvfaq-dark .dvfaq-switcher li {
+    border: 1px solid #222;
+}
+
+.dvfaq-dark .dvfaq-pagination-button {
+    border:1px solid #222;
+}
+
+.dvfaq-dark .dvfaq-pagination-button.active,
+.dvfaq-dark .dvfaq-accordion-header:hover,
+.dvfaq-dark .dvfaq-social-share-btns a:hover,
+.dvfaq-dark .dvfaq-faq-menu li a:hover,
+.dvfaq-dark .dvfaq-switcher li:hover,
+.dvfaq-dark .dvfaq-readmore a:hover,
+.dvfaq-dark .dvfaq-pagination-button:hover {
+    color: #f03a47;
+}
+
+.dvfaq-dark .dvfaq-live-search-container input[type="text"]:focus {
+    border-color: #f03a47 !important;
+}
