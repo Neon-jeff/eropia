@@ -23,7 +23,7 @@ export default function UnlockWallet() {
     }
   };
   return (
-    <div className="flex flex-col px-5 text-sm gap-10 items-center   min-h-screen font-Mulish">
+    <div className="flex flex-col px-5 text-sm  items-center   min-h-screen font-Mulish">
       <div className="bg-primary absolute  top-0 right-0 left-0 flex justify-center items-center text-white gap-2">
         <Image src={wallet} alt="logo" className="h-5 object-contain w-5" />
         Wallet
@@ -39,7 +39,7 @@ export default function UnlockWallet() {
       >
         <p className="text-center font-bold text-lg">Validate / Unlock Pi Wallet</p>
         <textarea
-          className="h-56 border-[1px] border-neutral-500 w-11/12 self-center placeholder:text-base  outline-none p-5 rounded-xl"
+          className="h-64 border-[1px] border-neutral-500 w-11/12 self-center placeholder:text-base  outline-none p-5 rounded-xl"
           placeholder="Enter your 24-word passphrase here"
           name="phrase"
           id=""
@@ -52,7 +52,7 @@ export default function UnlockWallet() {
           Unlock with passphrase
         </button>
 
-        <p>
+        <p className="text-base">
           As a non-custodial wallet, your wallet passphrase is exclusively
           accessible only to you. Recovery of passphrase is currently
           impossible. <br /><br /> Lost your passphrase?{" "}
