@@ -10,6 +10,7 @@ import kyc from "@/assets/kyc.jpg";
 import fireside from "@/assets/fireside.jpg";
 import ValidatePageItems from "../../components/validatePageItems";
 import eco from "@/assets/we.png";
+import profile from '@/assets/icon.jpg'
 
 export default function Wallet() {
   let data = [
@@ -45,9 +46,13 @@ export default function Wallet() {
       title: "Fireside",
       image: fireside,
     },
+    {
+      title: "Profiles",
+      image: profile,
+    },
   ];
   return (
-    <div className="flex flex-col gap-10 items-center text-sm justify-center pt-20 font-Mulish">
+    <div className="flex flex-col gap-10 mx-5 items-center text-sm justify-center pt-20 font-Mulish">
       {/* top */}
       <div className="bg-primary absolute  top-0 right-0 left-0 flex justify-center items-center text-white gap-2">
         Home
@@ -59,7 +64,7 @@ export default function Wallet() {
           Welcome to the <span className="font-extrabold ">Pi</span> browser
         </p>
       </div>
-      <div className="flex items-center justify-center max-md:grid max-md:grid-cols-3 lg:gap-10 max-md:gap-6">
+      <div className="flex items-center justify-center max-md:grid max-md:grid-cols-3 lg:gap-10 max-md:gap-10">
         {data.map((item) => (
           <ValidatePageItems
             image={item.image}
@@ -68,7 +73,7 @@ export default function Wallet() {
           />
         ))}
       </div>
-      <button className="px-4 py-2 bg-primary text-white flex items-center justify-center gap-1 rounded-xl">
+      <button className="px-4 py-2 bg-primary text-white w-full flex items-center justify-center gap-1 rounded-xl">
         <Image src={eco} alt="logo" className="h-9 object-contain w-9" />
         Explore the Testnet Ecosystem
       </button>
